@@ -1,0 +1,29 @@
+//INPUT
+class A{
+    void input1(){
+      System.out.println("Present");
+    }
+  }
+  class B extends A{
+    void input2(){
+      System.out.println("Hi");
+    }
+  }
+  class C extends A{
+    void input3(){
+      System.out.println("Jai Shree Raam");
+    }
+  }
+  class D{
+    public static void main(String[] args){
+      B r=new B();
+      C r2=new C();
+      r.input1(); r.input2();
+      r2.input1(); r2.input3();
+    }
+  }
+//OUTPUT
+Present
+Hi
+Present
+Jai Shree Raam
